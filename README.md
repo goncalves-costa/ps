@@ -4,3 +4,4 @@
 
 
 <p> Todo o programa foi desenvolvido por mim, utilizando C# e MYSQl </p>
+<p> Como solicitado uma aplicação com vunerabilidades e elas existem no código </p>
