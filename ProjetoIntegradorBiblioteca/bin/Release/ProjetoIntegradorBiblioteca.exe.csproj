@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7544DEF4-CCEC-4444-A1DB-C01421DE8307}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoIntegradorBiblioteca</RootNamespace>
+    <AssemblyName>ProjetoIntegradorBiblioteca</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\danie\AppData\Local\Temp\vs1351.tmp\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\danie\AppData\Local\Temp\vs1351.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Telas\Acervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Acervo.Designer.cs">
+      <DependentUpon>Acervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bibliotecaDataSet.cs">
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bibliotecaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\BuscaLeitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\BuscaLeitor.Designer.cs">
+      <DependentUpon>BuscaLeitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroAutor.Designer.cs">
+      <DependentUpon>CadastroAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroEditora.Designer.cs">
+      <DependentUpon>CadastroEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroIdiomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroIdiomas.Designer.cs">
+      <DependentUpon>CadastroIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Devolucao_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Devolucao_UC.Designer.cs">
+      <DependentUpon>Devolucao_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroFuncionario_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroFuncionario_UC.Designer.cs">
+      <DependentUpon>CadastroFuncionario_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroGenero.Designer.cs">
+      <DependentUpon>CadastroGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\EmprestimosLivros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\EmprestimosLivros.Designer.cs">
+      <DependentUpon>EmprestimosLivros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastrodeLivros_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastrodeLivros_UC.Designer.cs">
+      <DependentUpon>CadastrodeLivros_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroLeitores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroLeitores.Designer.cs">
+      <DependentUpon>CadastroLeitores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Frm_TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Frm_TelaPrincipal.Designer.cs">
+      <DependentUpon>Frm_TelaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Telas\Acervo.resx">
+      <DependentUpon>Acervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\BuscaLeitor.resx">
+      <DependentUpon>BuscaLeitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroAutor.resx">
+      <DependentUpon>CadastroAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroEditora.resx">
+      <DependentUpon>CadastroEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroIdiomas.resx">
+      <DependentUpon>CadastroIdiomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Devolucao_UC.resx">
+      <DependentUpon>Devolucao_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroFuncionario_UC.resx">
+      <DependentUpon>CadastroFuncionario_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroGenero.resx">
+      <DependentUpon>CadastroGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\EmprestimosLivros.resx">
+      <DependentUpon>EmprestimosLivros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastrodeLivros_UC.resx">
+      <DependentUpon>CadastrodeLivros_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroLeitores.resx">
+      <DependentUpon>CadastroLeitores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Frm_TelaPrincipal.resx">
+      <DependentUpon>Frm_TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bibliotecaDataSet.xsc">
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="bibliotecaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bibliotecaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bibliotecaDataSet.xss">
+      <DependentUpon>bibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoIntegrador_BibliotecasdeClasse\ProjetoIntegrador_BibliotecasdeClasse.csproj">
+      <Project>{99f6988d-23c7-46d5-94f8-69ca21ab1622}</Project>
+      <Name>ProjetoIntegrador_BibliotecasdeClasse</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

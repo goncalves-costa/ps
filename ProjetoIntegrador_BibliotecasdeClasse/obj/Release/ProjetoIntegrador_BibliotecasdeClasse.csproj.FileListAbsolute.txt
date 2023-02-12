@@ -1,0 +1,2 @@
+C:\Users\danie\OneDrive\Documentos\FAM\Fam 6º Semestre\Projeto Integrador\ProjetoIntegradorBiblioteca\ProjetoIntegrador_BibliotecasdeClasse\obj\Release\ProjetoIntegrador_BibliotecasdeClasse.csproj.AssemblyReference.cache
+C:\Users\danie\OneDrive\Documentos\FAM\Fam 6º Semestre\Projeto Integrador\ProjetoIntegradorBiblioteca\ProjetoIntegrador_BibliotecasdeClasse\obj\Release\ProjetoIntegrador_BibliotecasdeClasse.csproj.CoreCompileInputs.cache
