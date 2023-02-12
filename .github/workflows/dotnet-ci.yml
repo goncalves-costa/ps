@@ -27,3 +27,8 @@ jobs:
   # uses: fastify/github-action-merge-dependabot@1ce173cafbad45cb55d64a35613f54ad67fe3e7d
       uses: fastify/github-action-merge-dependabot@v3.3.0
       
+      
+    - name: Fetch Metadata from Dependabot PRs
+  
+      uses: dependabot/fetch-metadata@v1.3.6
+ 
